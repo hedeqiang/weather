@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the overtrue/weather.
+ * This file is part of the hedeqiang/weather.
  *
  * (c) hedeqiang<laravel_code@163.com>
  *

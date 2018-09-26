@@ -1,9 +1,14 @@
 <?php
-/**
- * User: hedeqiang
- * Date: 2018/9/26
- * Time: 14:49
+
+/*
+ * This file is part of the overtrue/weather.
+ *
+ * (c) hedeqiang<laravel_code@163.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
+
 namespace Hedeqiang\Weather;
 
 use GuzzleHttp\Client;
@@ -13,6 +18,7 @@ use Hedeqiang\Weather\Exceptions\InvalidArgumentException;
 class Weather
 {
     protected $key;
+
     protected $guzzleOptions = [];
 
     public function __construct($key)
@@ -33,7 +39,9 @@ class Weather
     /**
      * @param $city
      * @param string $format
+     *
      * @return mixed|string
+     *
      * @throws HttpException
      * @throws InvalidArgumentException
      */
@@ -45,7 +53,9 @@ class Weather
     /**
      * @param $city
      * @param string $format
+     *
      * @return mixed|string
+     *
      * @throws HttpException
      * @throws InvalidArgumentException
      */
@@ -55,11 +65,14 @@ class Weather
     }
 
     /**
-     * 获取天气信息
+     * 获取天气信息.
+     *
      * @param $city
      * @param string $type
      * @param string $format
+     *
      * @return mixed|string
+     *
      * @throws HttpException
      * @throws InvalidArgumentException
      */
@@ -79,7 +92,7 @@ class Weather
             'key' => $this->key,
             'city' => $city,
             'output' => \strtolower($format),
-            'extensions' =>  \strtolower($type),
+            'extensions' => \strtolower($type),
         ]);
 
         try {

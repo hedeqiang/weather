@@ -23,8 +23,7 @@ use PHPUnit\Framework\TestCase;
 class WeatherTest extends TestCase
 {
     public function testGetWeatherWithInvalidType()
-    {
-        $w = new Weather('mock-key');
+    {$w = new Weather('mock-key');
 
         $this->expectException(InvalidArgumentException::class);
         $this->expectExceptionMessage('Invalid type value(base/all): foo');

@@ -22,8 +22,7 @@ class Weather
     protected $guzzleOptions = [];
 
     public function __construct($key)
-    {
-        $this->key = $key;
+    {$this->key = $key;
     }
 
     public function getHttpClient()

@@ -1,8 +1,12 @@
 <?php
-/**
- * User: hedeqiang
- * Date: 2018/9/26
- * Time: 15:35
+
+/*
+ * This file is part of the overtrue/weather.
+ *
+ * (c) hedeqiang<laravel_code@163.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Hedeqiang\Weather;
@@ -13,7 +17,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
     public function register()
     {
-        $this->app->singleton(Weather::class, function(){
+        $this->app->singleton(Weather::class, function () {
             return new Weather(config('services.weather.key'));
         });
 

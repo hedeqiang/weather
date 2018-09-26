@@ -13,5 +13,4 @@ namespace Hedeqiang\Weather\Exceptions;
 
 class Exception extends \Exception
 {
-
 }

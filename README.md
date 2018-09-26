@@ -192,7 +192,7 @@ array | string   getForecastsWeather(string $city, string $format = 'json')
 WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
 ```
 
-可以用两种方式来获取 `Overtrue\Weather\Weather` 实例：
+可以用两种方式来获取 `Hedeqiang\Weather\Weather` 实例：
 
 #### 方法参数注入
 
@@ -200,7 +200,7 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
     .
     .
     .
-    public function edit(Weather $weather) 
+    public function show(Weather $weather) 
     {
         $response = $weather->getLiveWeather('深圳');
     }
@@ -215,7 +215,7 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
     .
     .
     .
-    public function edit() 
+    public function show() 
     {
         $response = app('weather')->getLiveWeather('深圳');
     }
@@ -228,6 +228,10 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
 ## 参考
 
 - [高德开放平台天气接口](https://lbs.amap.com/api/webservice/guide/api/weatherinfo/)
+
+## 鸣谢
+
+- [overtrue](https://github.com/overtrue)
 
 ## License
 

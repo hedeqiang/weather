@@ -4,6 +4,7 @@
 <p align="center">基于高德开放平台的 PHP 天气信息组件。</p>
 
 [![Build Status](https://travis-ci.org/hedeqiang/weather.svg?branch=master)](https://travis-ci.org/hedeqiang/weather)
+![StyleCI build status](https://github.styleci.io/repos/150400968/shield) 
 
 ## 安装
 

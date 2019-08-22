@@ -1,10 +1,10 @@
-
 <h1 align="center">Weather</h1>
 
 <p align="center">基于高德开放平台的 PHP 天气信息组件。</p>
 
 [![Build Status](https://travis-ci.org/hedeqiang/weather.svg?branch=master)](https://travis-ci.org/hedeqiang/weather)
-![StyleCI build status](https://github.styleci.io/repos/150400968/shield) 
+![StyleCI build status](https://github.styleci.io/repos/150400968/shield) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhedeqiang%2Fweather.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhedeqiang%2Fweather?ref=badge_shield)
+
 
 ## 安装
 
@@ -236,3 +236,5 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
 ## License
 
 MIT
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhedeqiang%2Fweather.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhedeqiang%2Fweather?ref=badge_large)
